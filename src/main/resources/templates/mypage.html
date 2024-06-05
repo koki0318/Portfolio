@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html
+    lang="ja"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+    >
+    <head>
+        <link rel="stylesheet" th:href="@{/css/common.css}" />
+        <link rel="stylesheet" th:href="@{/css/mypage.css}" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio Page</title>
+    </head>
+    <header>
+        <div class="header_inner">
+        <div class="title">
+            <a  th:href="@{/portfolio/top}">ポートフォリオサイト</a>
+            </div>
+        <div class="menu">
+            <nav class="nav">
+            <ul class="menu_group">
+                <li class="menu_item"><a href="#">カート</a></li>
+                <li class="menu_item"><a href="#">マイページ</a></li>
+            </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <body>
+
+        <div class="mypage">
+            <div class="user_container">
+                <img class="user_img" />
+                <div class="user_name" ></div>
+                <div class="user_price" ></div>
+            </div>
+        </div>
+
+    </body>
+    <footer class="footer">
+        <ul class="md-flex">
+        <li class="menu_item"><a href="#">About</a></li>
+        </ul>
+
+        <p class="copyright">※こちらのサイトはポートフォリオになります。</p>
+    </footer>
+</html>
