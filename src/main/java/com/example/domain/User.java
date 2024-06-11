@@ -19,16 +19,10 @@ public class User {
     /** 本人画像 */
     private String profileImg;
     /** 管理者フラグ */
-    private Integer admminFlg;
+    private Integer adminFlg;
     /** メールアドレス */
     private String email;
     
-    @Override
-    public String toString() {
-        return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", postalCode=" + postalCode
-                + ", city=" + city + ", block=" + block + ", building=" + building + ", profileImg=" + profileImg
-                + ", admminFlg=" + admminFlg + ", email=" + email + "]";
-    }
     public Integer getId() {
         return id;
     }
@@ -77,17 +71,23 @@ public class User {
     public void setProfileImg(String profileImg) {
         this.profileImg = profileImg;
     }
-    public Integer getAdmminFlg() {
-        return admminFlg;
+    public Integer getAdminFlg() {
+        return adminFlg;
     }
-    public void setAdmminFlg(Integer admminFlg) {
-        this.admminFlg = admminFlg;
+    public void setAdminFlg(Integer adminFlg) {
+        this.adminFlg = adminFlg;
     }
     public String getEmail() {
         return email;
     }
     public void setEmail(String email) {
         this.email = email;
+    }
+    @Override
+    public String toString() {
+        return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", postalCode=" + postalCode
+                + ", city=" + city + ", block=" + block + ", building=" + building + ", profileImg=" + profileImg
+                + ", adminFlg=" + adminFlg + ", email=" + email + "]";
     }
     
     
